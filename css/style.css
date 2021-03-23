@@ -90,7 +90,7 @@ body {
 }
 
 .the-main {
-		background-image: url(../../img/the-main/bg-header.jpg);
+		background-image: url(../img/the-main/bg-header.jpg);
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
