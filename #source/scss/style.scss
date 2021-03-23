@@ -165,10 +165,12 @@ font-family: Lato, "snas-serif";
 					color: #b2a67d;
 				}
 	}
-		}
+}
 		
+//===================================>>>>
 
 .about {
+	padding:0px 0px 60px 0px;
 	.container {
 		max-width: 833px;
 		margin: 0 auto;
@@ -176,11 +178,15 @@ font-family: Lato, "snas-serif";
 
 	// .about__header-block
 	&__header-block {
-		
+
 	}
 	// .about__header
 	&__header {
-		margin:0px 0px 70px 0px;
+		max-width: 633px;
+		margin: 0 auto 65px auto;
+		@media (max-width: 880px) {
+			margin: 0 auto 35px auto;
+		}
 	}
 	// .about__title
 	&__title {
@@ -195,18 +201,24 @@ font-size: 14px;
 font-weight: 300;
 line-height: 25.89px;
 text-align: center;
-margin:35px 0px 0px 0px;
+padding:35px 7px 0px 7px;
 	}
 	// .about__row
 	&__row {
 		display: flex;
-		margin: 0 -15px;
+		justify-content: center;
+		@media (max-width: 880px) {
+			display: block;
+		}
 	}
 }
 
 
 .header-block {
 	margin:100px 0px 95px 0px;
+	@media (max-width: 880px) {
+		margin:50px 0px 0px 0px;
+	}
 }
 
 .title {
@@ -230,27 +242,36 @@ margin:35px 0px 0px 0px;
 }
 
 .about-column {
-	flex: 1 1 33.333%;
-	padding: 0 15px;
+	max-width: 280px;
+	@media (max-width: 880px) {
+		max-width: none;
+	}
+	flex: 0 1 33.333%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	text-align: center;
+	margin:10px 0px 30px 10px;
+	
 	// .about-column__title
 	&__title {
 		font-size: 22px;
 		font-weight: 400;
 		text-align: center;
 		text-transform: uppercase;
-		letter-spacing: 3.52px;
-		margin:40px 0px 35px 0px;
+		letter-spacing: 3px;
+		margin:0px 0px 30px 0px;
+		@media (max-width: 880px) {
+			margin:0px 0px 15px 0px;
+		}
 	}
 	// .about-column__text
 	&__text {
-color: #868585;
-font-size: 14px;
-font-weight: 300;
-line-height: 26px;
-text-align: center;
+		color: #868585;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 26px;
+		text-align: center;
 	}
 	// .about-colum__icon
 	&__icon {
@@ -261,8 +282,14 @@ text-align: center;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		margin:0px 0px 40px 0px;
+		@media (max-width: 880px) {
+			margin:0px 0px 25px 0px;
+		}
 	}
-
-	
+	.about-column__icon_l img {
+		position: relative;
+		left: 5px;
+	}
 }
 
