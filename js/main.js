@@ -1,11 +1,27 @@
-$('.filter__item').click(function(event) {
-		var i==$(this).data('filter');
-	if (i==1) {
-		$('.portfolio__column').show();
-	}else{
-		$('.portfolio__column').hide();
-		$('.portfolio__column.f_'+i).show();
+function app() {
+	const buttons = document.querySelectorAll('.filter__item')
+	const cards = document.querySelectorAll('.portfolio__column')
+
+	function filter (category, items) {
+		items.forEach ((item) => {
+			const isItemFiltered = !item.classList.contains(category)
+			const isShowAll = category.toLowerCase() === 'all'
+			if (isItemFiltered && !isShowAll) {
+				item.classList.add('hide')
+			} else {
+				item.classList.remove('hide')
+			}
+		})
 	}
 
-	return false
-});
+	buttons.forEach((li) => {
+		li.addEventListener('click', () => {
+			const currentCategory = li.dataset.filter
+			filter(currentCategory, cards)
+		})
+	})
+}
+
+
+
+app()

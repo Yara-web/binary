@@ -38,13 +38,13 @@
 									<a href="#" class="menu__link menu__link_act">home</a>
 								</li>
 								<li>
-									<a href="#" class="menu__link">about us</a>
+									<a href="#" class="menu__link menu__link_act">about us</a>
 								</li>
 								<li>
-									<a href="#" class="menu__link">portfolio</a>
+									<a href="#" class="menu__link menu__link_act">portfolio</a>
 								</li>
 								<li>
-									<a href="#" class="menu__link">contact</a>
+									<a href="#" class="menu__link menu__link_act">contact</a>
 								</li>
 							</ul>
 						</nav>
@@ -101,29 +101,29 @@
 					</div>
 					<nav class="portfolio__filter filter">
 						<ul class="filter__list">
-							<li data-filter="1" class="filter__item act">all</li>
-							<li data-filter="2" class="filter__item">web</li>
-							<li data-filter="3" class="filter__item">apps</li>
-							<li data-filter="4" class="filter__item">other</li>
+							<li data-filter="all" class="filter__item">all</li>
+							<li data-filter="web" class="filter__item">web</li>
+							<li data-filter="apps" class="filter__item">apps</li>
+							<li data-filter="others" class="filter__item">other</li>
 						</ul>
 					</nav>
-					<div class="portfolio__items gallery">
-						<div class="portfolio__column f_2">
+					<div class="portfolio__items">
+						<div class="portfolio__column web">
 							<a href="img/portfolio/planet.jpg" class="portfolio-item"><img src="img/portfolio/planet.jpg" alt="planet"></a>
 						</div>
-						<div class="portfolio__column f_2">
+						<div class="portfolio__column web">
 							<a href="img/portfolio/planet.jpg" class="portfolio-item"><img src="img/portfolio/planet.jpg" alt="planet"></a>
 						</div>
-						<div class="portfolio__column f_2">
+						<div class="portfolio__column web">
 							<a href="img/portfolio/planet.jpg" class="portfolio-item"><img src="img/portfolio/planet.jpg" alt="planet"></a>
 						</div>
-						<div class="portfolio__column f_3">
+						<div class="portfolio__column apps">
 							<a href="img/portfolio/planet.jpg" class="portfolio-item"><img src="img/portfolio/planet.jpg" alt="planet"></a>
 						</div>
-						<div class="portfolio__column f_4">
+						<div class="portfolio__column others">
 							<a href="img/portfolio/planet.jpg" class="portfolio-item"><img src="img/portfolio/planet.jpg" alt="planet"></a>
 						</div>
-						<div class="portfolio__column f_4">
+						<div class="portfolio__column others">
 							<a href="img/portfolio/planet.jpg" class="portfolio-item"><img src="img/portfolio/planet.jpg" alt="planet"></a>
 						</div>
 					</div>
@@ -132,6 +132,75 @@
 					</div>
 				</div>
 			</main>
+
+			<section class="our-partners">
+				<div class="container">
+					<div class="our-partners__header">
+						<p class="our-partners__title">Our partners</p>
+					</div>
+					<div class="our-partners__items">
+						<div class="our-partners__picture">
+							<img src="img/our-partners/logo-2.svg" alt="logo0">
+						</div>
+						<div class="our-partners__picture">
+							<img src="img/our-partners/archiq.svg" alt="logo1">
+						</div>
+						<div class="our-partners__picture">
+							<img src="img/our-partners/thomsoon.svg" alt="logo2">
+						</div>
+						<div class="our-partners__picture">
+							<img src="img/our-partners/alex.svg" alt="logo3">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="contact">
+				<div class="container">
+					<div class="contact__header">
+						<p class="contact__title title">contact</p>
+					</div>
+					<div class="contact__body">
+						<div class="contact__column">
+							<form action="post" class="contact__form form-contact">
+								<div class="form-contact__row">
+									<div class="form-contact__column">
+										<div class="form-contact__input">
+											<label for="name" class="form-contact__label">your name</label>
+											<input type="text" name="" class="input" id="name">
+										</div>
+									</div>
+									<div class="form-contact__column">
+										<div class="form-contact__input">
+											<label for="mail">your E-MAIL</label>
+											<input type="email" class="input" id="mail">
+										</div>
+									</div>
+									<div class="form-contact__input">
+										<label for="area" class="form-contact__label">message</label>
+										<textarea name="" id="area" cols="30" rows="10"></textarea>
+									</div>
+									<button class="form-contact__btn">send</button>
+								</div>
+							</form>
+						</div>
+						<div class="contact__column">
+							<div class="contact__content">
+								<p class="contact__text">Have an idea for a project? Just looking to explore and see the possibilities? I'm here to help.</p>
+								<p class="contact__title">Postma Elena</p>
+								<div class="contact__social social">
+									<a href="#" class="social__link"><img src="" alt=""></a>
+									<a href="#" class="social__link"><img src="" alt=""></a>
+								</div>
+								<div class="contact__email">e-mail: 
+									<a href="mailto:postma.elena@gmail.com">postma.elena@gmail.com</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
+		<script src="js/main.js"></script>
 </body>
 </html>
