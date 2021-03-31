@@ -15,15 +15,15 @@
 				<div class="the-main__content">
 					<div class="container">
 						<div class="the-main__logo">
-							<a href="#"><img src="img/the-main/Layer_33_copy_2.png" alt=""></a>
+							<a href="" ><img src="img/the-main/Layer_33_copy_2.png" alt=""></a>
 						</div>
 						<div class="the-main__text ">
 							<p class="the-main__title">Clear, smart, attractive design </p>
 							<p class="the-main__subtitle">for your app, logo, website</p>
 						</div>
 						<div class="the-main__footer">
-							<a href="" class="the-main__btn btn">read more</a>
-							<a href="" class="the-main__arrow"><img src="img/the-main/Arrow-down.svg" alt=""></a>
+							<a href="#content"  class="the-main__btn btn">read more</a>
+							<a href="#content" class="the-main__arrow"><img src="img/the-main/Arrow-down.svg" alt=""></a>
 						</div>
 					</div>
 				</div>
@@ -35,7 +35,7 @@
 						<nav class="menu__list">
 							<ul class="menu__items">
 								<li>
-									<a href="#" class="menu__link menu__link_act">home</a>
+									<a href="" name="content"  class="menu__link menu__link_act">home</a>
 								</li>
 								<li>
 									<a href="#" class="menu__link menu__link_act">about us</a>
@@ -163,26 +163,28 @@
 					<div class="contact__body">
 						<div class="contact__column">
 							<form action="post" class="contact__form form-contact">
-								<div class="form-contact__row">
-									<div class="form-contact__column">
-										<div class="form-contact__input form-contact__input_name">
-											<div class="form-contact__label  ">your name</div>
-											<input type="text" name="" class="input" id="name">
+								<div class="form-contact__body">
+									<div class="form-contact__row">
+										<div class="form-contact__column">
+											<div class="form-contact__input form-contact__input_name">
+												<div class="form-contact__label  ">your name</div>
+												<input required type="text" name="" class="input" id="name">
+											</div>
 										</div>
-									</div>
-									<div class="form-contact__column">
-										<div class="form-contact__input form-contact__input_email">
-											<div class="form-contact__label">your E-MAIL</div>
-											<input type="email" class="input" id="mail">
+										<div class="form-contact__column">
+											<div class="form-contact__input form-contact__input_email">
+												<div class="form-contact__label">your E-MAIL</div>
+												<input required type="email" class="input" id="mail">
+											</div>
 										</div>
 									</div>
 									<div class="form-contact__input form-contact__input_text">
 										<div class="form-contact__label ">message</div>
-										<textarea style="width:363px; height:118px;" name="" class="form-contact__area" ></textarea>
+										<textarea  name="" class="form-contact__area" ></textarea>
 									</div>
-								</div>
-								<div class="form-contact__button">
-									<button class="form-contact__button_btn"><span>send</span></button>
+									<div class="form-contact__button">
+										<button class="form-contact__button_btn"><span>send</span></button>
+									</div>
 								</div>
 							</form>
 						</div>
@@ -202,6 +204,25 @@
 					</div>
 				</div>
 			</section>
+
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__body">
+						<a href="#" class="footer__logo"><img src="img/footer/logo-footer.png" alt="footer__logo"></a>
+						<nav class="footer__menu">
+							<ul class="footer__items">
+								<li><a href="#" class="footer__link">Home</a></li>
+								<li><a href="#" class="footer__link">Facebook</a></li>
+								<li><a href="#" class="footer__link">Linkedin</a></li>
+								<li><a href="#" class="footer__link">Contact</a></li>
+							</ul>
+						</nav>
+						<p class="footer__copy">
+							© 2015. All Rights Reserved 
+						</p>
+					</div>
+				</div>
+			</footer>
 		</div>
 		<script src="js/main.js"></script>
 </body>
